@@ -7,7 +7,7 @@ pathOut = '/editedImgs'
 for filename in os.listdir(path):
     img = Image.open(f"{path}/{filename}")
     
-    edit = img.filter(ImageFilter.SHARPEN).convert('L').rotate(-90)
+    edit = img.filter(ImageFilter.SHARPEN).convert('L')
     
     clean_name =os.path.splitext(filename)[0]
         
